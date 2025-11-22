@@ -7,13 +7,18 @@
 }
 
 .gallery-header h1 {
+  font-family: $title-font;
   font-size: 1.8rem;
+  font-weight: 300;
+  color:  $secondary-color;
   margin-bottom: 0.5rem;
 }
 
 .gallery-header h2 {
+  font-family: $normal-font;
   font-size: 1rem;
-  color: #555;
+  font-weight: 300;
+  color:  $secondary-color;
   margin-bottom: 2rem;
 }
 
@@ -32,6 +37,10 @@
   aspect-ratio: 1 / 1; // ensures square
   overflow: hidden;
   border-radius: 8px;
+
+  &.gal2 img  {
+    object-position: top;
+  }
 }
 
 .gallery-item img {

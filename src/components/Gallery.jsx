@@ -11,7 +11,7 @@ export default function Gallery() {
         <div className="gallery-item">
           <img src="/gallery1.jpg" alt="Project 1" />
         </div>
-        <div className="gallery-item">
+        <div className="gallery-item gal2">
           <img src="/gallery2.jpg" alt="Project 2" />
         </div>
         <div className="gallery-item">
