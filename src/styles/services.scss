@@ -4,6 +4,7 @@
   width: 100%;
   padding: 3rem 1.5rem;
   text-align: center;
+  background-color: $tertiary-color;
 }
 
 /* Image at the top */
@@ -17,7 +18,10 @@
 
 /* Content */
 .services-content h1 {
+  font-family: $title-font;
   font-size: 1.8rem;
+  font-weight: 300;
+  color:  $secondary-color;
   margin-bottom: 1rem;
 }
 
@@ -28,17 +32,21 @@
 }
 
 .services-content li {
+  list-style: none;
+  font-family: $normal-font;
   font-size: 1rem;
+  font-weight: 300;
+  color:  $secondary-color;
   margin-bottom: 0.8rem;
   position: relative;
   padding-left: 1.2rem;
 }
 
 /* Optional: add a simple bullet before each item */
-.services-content li::before {
-  content: "•";
-  color: #000;
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
-}
+// .services-content li::before {
+//   content: "•";
+//   color: #000;
+//   position: absolute;
+//   left: 0;
+//   font-size: 1.2rem;
+// }
