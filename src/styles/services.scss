@@ -1,0 +1,42 @@
+.services {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* Image at the top */
+.services-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Content */
+.services-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.services-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-content li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+/* Optional: add a simple bullet before each item */
+.services-content li::before {
+  content: "•";
+  color: #000;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
