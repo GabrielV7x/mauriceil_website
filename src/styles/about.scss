@@ -1,50 +1,23 @@
 .about {
-  height: 100vh;               // full viewport height
   width: 100%;
-  background-image: url("/your-about-image.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+  padding: 3rem 1.5rem;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-/* Black transparent box */
-.about-overlay {
-  background: rgba(0, 0, 0, 0.8);   // 80% transparency
-  padding: 2rem;
-  max-width: 90%;
+.about-content {
+  max-width: 700px;
   text-align: center;
-  color: white;
-  border-radius: 10px;
 }
 
-/* Text styling */
-.about-overlay h1 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.about-overlay h2 {
-  font-size: 1.2rem;
+.about-content h1 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-.about-overlay p {
+.about-content p {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Button */
-.about-overlay button {
-  padding: 0.8rem 1.4rem;
-  font-size: 1rem;
-  background: white;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  line-height: 1.6;
+  color: #333;
 }
