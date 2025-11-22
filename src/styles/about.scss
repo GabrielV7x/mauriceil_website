@@ -13,15 +13,16 @@
 }
 
 .about-content h1 {
-  color: $secondary-color;
+  font-family: $title-font;
   font-size: 1.8rem;
+  font-weight: 200;
+  color: $secondary-color;
   margin-bottom: 1rem;
-  font-weight: 700;
 }
 
 .about-content p {
-  color: $secondary-color;
+  font-family: $normal-font;
   font-size: 1rem;
+  color: $secondary-color;
   line-height: 1.6;
-  color: #333;
 }
