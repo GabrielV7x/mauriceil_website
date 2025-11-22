@@ -1,9 +1,11 @@
+@import './variables.scss';
+
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("/your-hero-image.jpg");
+  background-image: url("/hero_img.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -13,37 +15,45 @@
 
 /* Black transparent box */
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(98, 66, 48, 0.8); // #624230 with 0.8 opacity
   padding: 2rem;
   max-width: 90%;
   text-align: center;
-  color: white;
+  color: $fourth-color;
   border-radius: 10px;
 }
 
 /* Text styling */
 .hero-overlay h1 {
-  font-size: 1.6rem;
+  font-family: $title-font;
+  font-size: 2rem;
+  font-weight: 200;
   margin-bottom: 0.5rem;
 }
 
 .hero-overlay h2 {
+  font-family: $title-font;
   font-size: 1.2rem;
+  font-weight: 200;
   margin-bottom: 1rem;
-  font-weight: 500;
 }
 
 .hero-overlay p {
+  font-family: $normal-font;
   font-size: 1rem;
+  font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
 /* Button */
 .hero-overlay button {
   padding: 0.8rem 1.4rem;
+  font-family: $normal-font;
   font-size: 1rem;
-  background: white;
-  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $primary-color;
+  color: $secondary-color;
   border: none;
   border-radius: 5px;
   cursor: pointer;
