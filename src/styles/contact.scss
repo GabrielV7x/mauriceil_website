@@ -32,7 +32,7 @@
 .contact-btn {
   text-decoration: none;
   background: $secondary-color;
-  color: $fourth-color;
+  color: $primary-color;
   padding: clamp(0.8rem, 2vw, 1rem) clamp(1.2rem, 3vw, 1.5rem);
   border: none;
   border-radius: 6px;
@@ -41,7 +41,7 @@
   display: inline-block;
   transition: 0.3s ease;
 
-  &:hover {
-    background: darken($primary-color, 10%);
-  }
+  // &:hover {
+  //   background: darken($primary-color, 10%);
+  // }
 }
