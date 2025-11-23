@@ -30,15 +30,32 @@
 }
 
 /* Button */
-.contact-content button {
-  $normal-font: "Inter", sans-serif;
-  font-weight: 500;
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
+// .contact-content button {
+//   $normal-font: "Inter", sans-serif;
+//   font-weight: 500;
+//   padding: 0.8rem 1.6rem;
+//   font-size: 1rem;
+//   background: $secondary-color;
+//   color: $primary-color;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+// }
+
+.contact-btn {
+  text-decoration: none;
   background: $secondary-color;
-  color: $primary-color;
+  color: $fourth-color;
+  padding: 0.9rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  display: inline-block;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
 }

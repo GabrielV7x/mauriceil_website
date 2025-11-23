@@ -10,7 +10,11 @@ export default function Hero() {
           We create modern, durable and perfectly finished interiors for homes,
           offices and commercial spaces.
         </p>
-        <button>Request a Quote</button>
+        <button className="hero-btn" onClick={() => {
+          document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }}>
+          Request a Quote
+        </button>
       </div>
     </section>
   );
