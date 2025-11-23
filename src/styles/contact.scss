@@ -2,7 +2,7 @@
 
 .contact {
   width: 100%;
-  padding: 4rem 1.5rem;
+  padding: clamp(3rem, 6vw, 6rem) 1.5rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -15,7 +15,7 @@
 
 .contact-content h1 {
   font-family: $title-font;
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
   font-weight: 700;
   color: $black;
   margin-bottom: 1rem;
@@ -23,34 +23,20 @@
 
 .contact-content h2 {
   font-family: $normal-font;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   color: $black;
   margin-bottom: 2rem;
   line-height: 1.5;
 }
 
-/* Button */
-// .contact-content button {
-//   $normal-font: "Inter", sans-serif;
-//   font-weight: 500;
-//   padding: 0.8rem 1.6rem;
-//   font-size: 1rem;
-//   background: $secondary-color;
-//   color: $primary-color;
-//   border: none;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-// }
-
 .contact-btn {
   text-decoration: none;
   background: $secondary-color;
   color: $fourth-color;
-  padding: 0.9rem 1.5rem;
+  padding: clamp(0.8rem, 2vw, 1rem) clamp(1.2rem, 3vw, 1.5rem);
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   cursor: pointer;
   display: inline-block;
   transition: 0.3s ease;
