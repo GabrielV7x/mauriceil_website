@@ -16,10 +16,10 @@
 
 /* Black transparent box */
 .hero-overlay {
-  background: rgba(98, 66, 48, 0.8); // #624230 with 0.8 opacity
-  padding: clamp(1.5rem, 4vw, 3rem);
-  max-width: 90%;
   text-align: center;
+  background: rgba(98, 66, 48, 0.8); // #624230 with 0.8 opacity
+  padding: clamp(2rem, 4vw, 3rem);
+  max-width: 21.25rem;
   color: $fourth-color;
   border-radius: 10px;
 }
@@ -27,21 +27,22 @@
 /* Text styling */
 .hero-overlay h1 {
   font-family: $title-font;
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 200;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-overlay h2 {
   font-family: $title-font;
   font-size: clamp(1.2rem, 3.5vw, 2rem);
+  font-size: clamp(1.2rem, 3.5vw, 1.8rem);
   font-weight: 200;
   margin-bottom: 1rem;
 }
 
 .hero-overlay p {
   font-family: $normal-font;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
@@ -64,15 +65,16 @@
 /* Move overlay left on tablets/desktops */
 @include respond($tablet) {
   .hero-overlay {
-    margin-left: 50px;
-    margin-right: auto;
-    text-align: left;
-    max-width: 60%;
+    // max-width: 60%;
   }
 }
 
 @include respond($desktop) {
   .hero-overlay {
-    max-width: 50%;
+    position: absolute;
+    bottom: 1.5rem;   // distance from bottom
+    left: 1.5rem;     // distance from left
+    margin-right: auto;
+    text-align: left;
   }
 }
