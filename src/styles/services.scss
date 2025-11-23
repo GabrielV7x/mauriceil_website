@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import "../styles/breakpoints.scss";
 
 .services {
   width: 100%;
@@ -42,11 +43,27 @@
   padding-left: 1.2rem;
 }
 
-/* Optional: add a simple bullet before each item */
-// .services-content li::before {
-//   content: "•";
-//   color: #000;
-//   position: absolute;
-//   left: 0;
-//   font-size: 1.2rem;
-// }
+/* Move overlay left on tablets/desktops */
+@include respond($tablet) {
+  #services {
+    // max-width: 60%;
+  }
+}
+
+@include respond($desktop) {
+  #services {
+    padding: unset;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .services-image {
+      img {
+        display: block;
+        margin-bottom: unset;
+        max-width: 635px;
+        border-radius: unset;
+      }
+    }
+  }
+}
